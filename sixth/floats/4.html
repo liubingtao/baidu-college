@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化</title>
+
+
+  <style>
+    .left {
+      width: 300px;
+      height: 900px;
+      float: left;
+      background-color: crimson;
+    }
+    .content {
+      width: calc(100% - 600px);
+      height: 900px;
+      float: left;
+      background-color: cyan;
+    }
+    .right {
+      width: 300px;
+      height: 900px;
+      float: left;
+      background-color:darkgray;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="left"></div>
+  <div class="content"></div>
+  <div class="right"></div>
+</body>
+</html>

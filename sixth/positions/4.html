@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 900px;
+      background-color: lightcoral;
+    }
+
+    .content {
+      margin: 0 300px;
+      height: 900px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      background-color: lightslategrey;
+    }
+
+    .right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 900px;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left"></div>
+  <div class="content">
+    dassssssssssssssssssssssssssssdasdasdadajsdijasdihasduasjhdjkasdhjaksdhkajshdkjasdassssssssssssssssssssssssssssdasdasdadajsdijasdihasduasjhdjkasdhjaksdhkajshdkjasdassssssssssssssssssssssssssssdasdasdadajsdijasdihasduasjhdjkasdhjaksdhkajshdkjasdassssssssssssssssssssssssssssdasdasdadajsdijasdihasduasjhdjkasdhjaksdhkajshdkjasdassssssssssssssssssssssssssssdasdasdadajsdijasdihasduasjhdjkasdhjaksdhkajshdkja
+
+  </div>
+  <div class="right"></div>
+</body>
+
+</html>

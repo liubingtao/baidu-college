@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ife</title>
+  <style>
+    body, div, header, footer, main, ul {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    .clearfloat {
+      zoom: 1;
+    }
+    .clearfloat::after {
+      display: block;
+      clear: both;
+      content: "";
+      visibility: hidden;
+    }
+    header {
+      width: 100%;
+      min-width: 1000px;
+      height: 70px;
+      background-color: slategray;
+    }
+    .content {
+      width: 960px;
+      margin: 0 auto;
+    }
+    .logo {
+      float: left;
+      font-size: 1.4rem;
+      font-weight: bolder;
+      padding-top: 10px;
+      color: #fff;
+    }
+    .header-nav {
+      float: right;
+    }
+    .header-nav ul li {
+      display: inline-block;
+    }
+    .header-nav ul li a {
+      font-size: 0.8rem;
+      color: #fff;
+    }
+    .banner {
+      width: 100%;
+      min-width: 1000px;
+      height: 200px;
+      background-color: chartreuse;
+    }
+    .banner .number {
+      position: relative;
+      width: 960px;
+      height: 100%;
+      margin: 0 auto;
+    }
+    .pages {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+    }
+    .pages li {
+      /* display: inline-block; */
+      float: left;
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      border: 1px black solid;
+      background-color: rgba(255, 255, 255, 0.5);
+      font-size: 0.8rem;
+    }
+    .pages li:nth-of-type(2) {
+      margin-top: -10px;
+      height: 30px;
+      line-height: 35px;
+      background-color: rgba(255, 255, 255, 01);
+    }
+
+    footer {
+      width: 100%;
+      min-width: 1000px;
+      height: 150px;
+      background-color: slategray;
+    }
+    footer .footer {
+      color: #fff;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .main-nav {
+      width: 100%;
+      border-bottom: rgba(71, 67, 67, 0.5) 1px solid;
+      height: 50px;
+    }
+    .main-nav .content ul li{
+      margin-top: 8px;
+      width: 80px;
+      height: 20px;
+      float: left;
+      margin-right: 10px;
+      padding-top: 20px;
+      border-radius: 10px 10px 0 0;
+      /* border: rgba(71, 67, 67, 0.5) 1px solid; */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="content">
+      <div class="logo clearfloat">Logo</div>
+      <div class="header-nav clearfloat">
+        <ul>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="number">
+        <ul class="pages">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-nav">
+        <div class="content">
+          <ul>
+            <li>HOME</li>
+            <li>PRO</li>
+            <li>ABOUT</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+das
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      © 2018 ife.baidu.com
+    </div>
+  </footer>
+</body>
+</html>
