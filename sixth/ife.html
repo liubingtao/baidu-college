@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ife</title>
   <style>
-    body, div, header, footer, main, ul {
+    body, div, header, footer, main, ul, li {
       margin: 0;
       padding: 0;
     }
@@ -99,16 +99,61 @@
       width: 100%;
       border-bottom: rgba(71, 67, 67, 0.5) 1px solid;
       height: 50px;
+      margin-bottom: 10px;
     }
     .main-nav .content ul li{
-      margin-top: 8px;
+      
+      margin-top: 9px;
       width: 80px;
       height: 20px;
       float: left;
-      margin-right: 10px;
       padding-top: 20px;
       border-radius: 10px 10px 0 0;
-      /* border: rgba(71, 67, 67, 0.5) 1px solid; */
+      border: rgba(71, 67, 67, 0.5) 1px solid;
+      border-bottom: #fff;
+      color: #fff;
+      background-color: rgba(71, 67, 67, 0.5);
+      line-height: 8px;
+      text-align: center;
+    }
+    .main-nav .content ul li:first-child {
+      position: relative;
+      background-color: #fff;
+      color: black;
+    }
+    .main-nav .content ul li:first-child::after {
+      display: block;
+      content: "";
+      width: 80px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 40px;
+    }
+    .flex {
+      display: flex;
+      flex-flow:  row wrap;
+      
+    }
+    .flex-content {
+      /* flex: 1; */
+      
+      margin: 0 10px 10px 0;
+      width: 305px;
+      height: 150px;
+      border: 1px solid black;
+    }
+    .flex-content-4 {
+      /* flex: 1; */
+      margin: 0 10px 10px 0;
+      width: 226px;
+      height: 150px;
+      border: 1px solid black;
+    }
+    .flex-content, .flex-content-4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
@@ -146,8 +191,17 @@
           </ul>
         </div>
       </div>
-      <div class="content">
-das
+      <div class="content flex">
+        <div class="flex-content">content 1</div>
+        <div class="flex-content">content 2</div>
+        <div class="flex-content">content 3</div>
+        <div class="flex-content-4">content 4</div>
+        <div class="flex-content-4">content 5</div>
+        <div class="flex-content-4">content 6</div>
+        <div class="flex-content-4">content 7</div>
+        <div class="flex-content">content 8</div>
+        <div class="flex-content">content 9</div>
+        <div class="flex-content">content 10</div>
       </div>
     </div>
   </main>
