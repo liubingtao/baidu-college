@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  header, footer {
+    height: 70px;
+    width: 100%;
+    background-color: beige;
+  }
+  .container {
+    padding:  0 200px;
+    overflow: hidden;
+  }
+  .middle {
+    width: 100%;
+    min-height: 130px;
+    background-color: burlywood;
+    float: left;
+    position:relative;
+    word-wrap: break-word;
+    
+  }
+  .left {
+    width: 200px;
+    min-height: 130px;
+    background-color: chocolate;
+    float: left;
+    position:relative;
+    word-wrap: break-word;
+    margin-left: -100%;
+    left: -200px;
+  }
+  .right {
+    width: 200px;
+    min-height: 130px;
+    background-color: cyan;
+    float: left;
+    position:relative;
+    word-wrap: break-word;
+    margin-left: -200px;
+    right: -200px;
+  }
+  footer {
+    clear: both;
+  }
+  </style>
+</head>
+<body>
+  <header><h2>header</h2></header>
+  <div class="container">
+    <div class="middle">
+      <h2>middle</h2>
+      <p>dsasdasdafdhsjfhakfdhdfhduiahfdjksafhakdjsdsasdasdafdhsjfhakfdhdfhduiahfdjksafhakdjsdsasdasdafdhsjfhakfdhdfhduiahfdjksafhakdjsdsasdasdafdhsjfhakfdhdfhduiahfdjksafhakdjsdsasdasdafdhsjfhakfdhdfhduiahfdjksafhakdjsdsasdasdafdhsjfhakfdhdfhduiahfdjksafhakdjs</p>
+    </div>
+    <div class="left">
+      <h2>left</h2>
+      <p>fdhakdaskdhasofnsdkcnaiuchqiodcc</p>
+    </div>
+    <div class="right">
+      <h2>right</h2>
+      <p>fdjafkndjknfcdasdjewoifdjdekjndlafcjndsalfjdsklfs</p>
+    </div>
+  </div>
+  <footer><h2>footer</h2></footer>
+</body>
+</html>
